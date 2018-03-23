@@ -2,6 +2,7 @@ package pl.impementation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -9,16 +10,21 @@ import pl.api.GoodPizzaa;
 import pl.api.IOrder;
 import pl.api.IPIzza;
 
+import java.util.List;
+
 @Component
 @Primary
 public class ExclusiveOrder implements IOrder {
 
+    @Value("#{listOfPizza[0]}")
+    private IPIzza ipIzza;
+
     @Autowired
+    private List<IPIzza> listOfPizza;
     public void setIpIzza(IPIzza ipIzza) {
         this.ipIzza = ipIzza;
     }
 
-    private IPIzza ipIzza;
 
     public ExclusiveOrder() {
         super();

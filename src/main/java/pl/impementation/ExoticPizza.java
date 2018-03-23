@@ -21,7 +21,7 @@ public class ExoticPizza implements IPIzza {
         return price;
     }
 
-    public ExoticPizza(@Value("${cenaEgzotyczna}") int price,@Value("${nazwa}") String name) {
+    public ExoticPizza(@Value("#{goodPizza.getPrice()<30 ? 15: 23}") int price,@Value("${nazwa}") String name) {
         this.price = price;
         this.name = name;
     }
