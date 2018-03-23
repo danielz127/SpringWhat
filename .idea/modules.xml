@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AspektPizze/AspektPizze.iml" filepath="$PROJECT_DIR$/AspektPizze/AspektPizze.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mecz/Mecz.iml" filepath="$PROJECT_DIR$/Mecz/Mecz.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pizzeria/Pizzeria.iml" filepath="$PROJECT_DIR$/Pizzeria/Pizzeria.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWhat.iml" filepath="$PROJECT_DIR$/SpringWhat.iml" />

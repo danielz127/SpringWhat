@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="AspektPizze" />
         <module name="Mecz" />
         <module name="Pizzeria" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AspektPizze" target="1.8" />
       <module name="Mecz" target="1.8" />
       <module name="Pizzeria" target="1.8" />
       <module name="SpringWhat" target="1.8" />
